@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Great Vibes', cursive;
+}
+body{
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    /*background: linear-gradient(#FF9933,#ffff,#138808);*/
+    background: #06181f;
+}
+.container{
+    position: absolute;
+    width: 750px;
+    display:inline-flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+}
+svg #svg2{
+    position: absolute;
+    left: -100px;
+    width: 100px;
+}
+.container .icon,.container.india{
+    width: 600px;
+    height: 480px;
+    display:flex;
+}
+.container .icon svg{
+    height: 100vh;
+    width: 70vh;
+}
+.container .icon path{
+    fill:transparent;
+}
+.container .icon.india path{
+    stroke-dasharray: 25600;
+    stroke-dashoffset: 0;
+    animation: india 6s linear forwards;
+}
+.container .icon.india #path24{
+    opacity: 0;
+    animation: rotate 10s linear forwards infinite;
+    animation-delay: 7.5s;
+    transition: ease-in-out;
+}
+@keyframes rotate{
+    0%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 1;
+        transform: rotate(360deg);
+    }
+}
+/*@keyframes india{
+    0%{
+        stroke-dashoffset: 0;
+    }
+    40%{
+        stroke-dashoffset: 35600;
+
+    }
+    80%{
+        stroke-dashoffset: 18800;
+        fill: transparent;
+    }
+    100%{
+        stroke-dashoffset: 35600;
+    
+    }
+}*/
+.container .icon.india #svg2{
+    justify-content: center;
+
+}
+#rect4{
+    opacity: 1;
+     animation: fade 3s;
+     transition: ease-in-out;
+}
+@keyframes fade{
+    0%{
+        opacity: 0;
+    }
+    50%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+#rect6{
+    opacity: 1;
+    animation: fade 6s;
+    transition: ease-in-out;
+
+}
+#rect8{
+    opacity: 1;
+    animation: fade 10s;
+    transition: ease-in-out;
+
+}
+@keyframes fade2{
+    0%{
+        opacity: 0;
+    }
+    66%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+#circle12,#circle14,#circle16,#circle22{
+    opacity: 1;
+    animation: fade 16s;
+    transition: ease-in-out;
+
+}
+
+.container .greet{
+    width: 300px;
+    margin-left: 100%;
+    margin-top: -40%;
+    padding-left: 100px;
+    display:flex;
+    flex-direction: column;
+    right: 0;
+    animation: hide1 18s;
+}
+@keyframes hide1{
+    0%{
+        opacity: 0;
+    }
+    50%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+
+}
+.container .greet h1{
+    color: #fff;
+    font-size: 3.8em;
+    line-height: 1.5em;
+    font-weight: 800;
+    padding-bottom: 10px ;
+}
